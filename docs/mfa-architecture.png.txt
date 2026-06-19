@@ -1,0 +1,47 @@
+                ┌──────────────────────────┐
+                │        User Device       │
+                │ (Laptop / Mobile / VDI)  │
+                └─────────────┬────────────┘
+                              │
+                              ▼
+                ┌──────────────────────────┐
+                │     Sign‑In Request      │
+                │ (User enters credentials)│
+                └─────────────┬────────────┘
+                              │
+                              ▼
+                ┌──────────────────────────┐
+                │     Azure AD Identity    │
+                │     Authentication        │
+                └─────────────┬────────────┘
+                              │
+                              ▼
+                ┌──────────────────────────┐
+                │  Conditional Access Engine│
+                │  • User risk              │
+                │  • Sign‑in risk           │
+                │  • Device compliance      │
+                │  • Location               │
+                │  • App sensitivity        │
+                └─────────────┬────────────┘
+                              │
+                ┌─────────────┴──────────────┐
+                │   Access Controls Applied   │
+                │   • Require MFA             │
+                │   • Block access            │
+                │   • Require compliant device│
+                └─────────────┬──────────────┘
+                              │
+                              ▼
+                ┌──────────────────────────┐
+                │     MFA Challenge        │
+                │  (Authenticator / SMS /  │
+                │   Push / FIDO2 Key)      │
+                └─────────────┬────────────┘
+                              │
+                              ▼
+                ┌──────────────────────────┐
+                │     Access Decision      │
+                │   • Access Granted       │
+                │   • Access Denied        │
+                └──────────────────────────┘
