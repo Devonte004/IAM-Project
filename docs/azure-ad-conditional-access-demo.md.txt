@@ -1,0 +1,91 @@
+1
+Open Conditional Access
+This is where all access control policies are created and managed.
+
+Microsoft Entra admin center → Protection → Conditional Access → Policies
+
+Sign in with an account that has Security Administrator or Global Administrator permissions
+
+Navigate to Protection on the left menu
+
+Select Conditional Access
+
+Click Policies to view existing policies
+
+
+02
+Create a New Policy
+Start building a new Conditional Access policy.
+
+Conditional Access → Policies → New policy
+
+Click New policy in the top menu
+
+Name your policy clearly (e.g., Require MFA for All Users)
+
+Keep naming consistent with enterprise standards
+
+
+03
+Select Users or Groups
+Important
+Choose who the policy will apply to.
+
+Under Assignments, click Users
+
+Select All users (or a test group for safety)
+
+Exclude break‑glass accounts (recommended)
+
+04
+Choose Cloud Apps
+Specify which apps require MFA.
+
+Click Cloud apps or actions
+
+Select All cloud apps for broad enforcement
+
+Or choose specific apps like Exchange, SharePoint, or Admin portals
+
+05
+Configure Conditions (Optional)
+Risk-Based MFA
+Add risk‑based or location‑based logic.
+
+Click Conditions
+
+Configure options such as:
+
+Sign‑in risk (Medium+)
+
+Device platform
+
+Locations (e.g., block outside trusted locations)
+
+Client apps
+
+06
+Set Access Controls
+This is where you enforce MFA.
+
+Click Grant
+
+Select Grant access
+
+Check Require multi-factor authentication
+
+Click Select to confirm
+
+
+07
+Enable the Policy
+Best Practice
+Turn the policy on and apply it.
+
+Scroll to Enable policy
+
+Choose Report‑only to test safely
+
+Or choose On to enforce immediately
+
+Click Create to finalize the policy
